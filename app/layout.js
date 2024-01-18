@@ -8,7 +8,6 @@ import Test from "@/components/Test";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Strategy from "@/components/Strategy";
-import ProgramDetails from "@/components/ProgramDetails";
 import Footer from "@/components/Footer";
 
 export const metadata = {
