@@ -30,6 +30,10 @@ module.exports = {
           50: '#30AF5B',
           90: '#292C27',
         },
+        
+        teal: '#45BC41',
+        yellow: '#B0BC41',
+
         gray: {
           10: '#EEEEEE',
           20: '#A2A2A2',
@@ -67,5 +71,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

@@ -4,15 +4,19 @@ import React, { useState } from "react";
 import Popup from "./Popup";
 import "../../app/globals.css";
 
+
+
 const PopupButton1 = () => {
-  
+ 
 
   return (
 
       
       <>
+     
+        <div className="hidden lg:block">
       <div className=" container">
-          <div className="PopUpTitleDiv">
+          <div className="PopUpTitleDiv ">
             UPSC Integrated Batches
             <div className="pb-4  text-3xl font-medium pt-4 text-center md:text-center ">
               [9 month Batch]
@@ -79,9 +83,69 @@ const PopupButton1 = () => {
            
           </div>
         </div>
+        </div>
 
-          
+
+
+      <div className="lg:hidden block">
+      <>
+       
+       {/* Title */}
+       <div className=" w-full h-auto font-feature-settings font-rubik ">
+         <div
+           className="  titleColor text-center text-[24px]  font-bold 
+      
+          md:PopUpTitleDiv1 "
+         >
+           UPSC Integrated Batches
+           <div className="pb-2 sm:pb-4  text-2xl sm:text-3xl font-medium pt-2 sm:pt-4 text-center md:text-center ">
+             [9 month Batch]
+           </div>
+         </div>
+         <div className="PopUpLine border" />
+
+         {/* Text  */}
+       </div>
+
+       <div
+         className="   pl-[1rem] !text-start text-[#2C3131]
+       text-[18px] font-semibold  font-rubik font-feature-settings 
+         "
+       >
+         Features:{" "}
+       </div>
+
+       <div className="flex flex-col  w-full h-auto pb-4 ">
+         <div className="text-[14px] text-justify text-nowrap   px-2 ">
+           <li>
+             Targeted to crack the exam in the first attempt.
+           </li>
+           <li>Based on Delhi Pattern.</li>
+           <li>Weekly prelim and mains test.</li>
+           <li>Daily prelim and main answer writing session.</li>
+           <li>Daily The Hindu Editorial Discussion.</li>
+           <li>Regular Personal guidance and counselling.</li>
+
+           <li>Focus on developing the right approach,</li>
+
+           <li>thought process and application of knowledge.</li>
+           <li>Systematic approach to syllabus competition</li>
+           <li> Expert and Experienced faculty.</li>
+           <li>Small size of batches (45 to 50 students)</li>
+           <li>Special focus on student doubt clearance</li>
+           <li>Regular current affairs-based answer writing session.</li>
+           <li>Quality Enrichment session by selected candidate.</li>
+         </div>
+       </div>
+
+      
+       </>
+      </div>
+
     </>
+
+
+ 
     
   );
 };

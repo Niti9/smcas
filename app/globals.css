@@ -49,13 +49,8 @@
 
 .popup-content {
   background-color: #fff;
-  /* padding: 20px; */
   padding-bottom: 10px;
-  /* margin-bottom: 20px; */
   width: 957px;
-  /* height: 300px; */
-
-  /* height: 500px; */
   height: 650px;
   border-radius: 8px;
   text-align: center;
@@ -252,7 +247,7 @@ background: #C3EFC3;
 }
 
 .PopUpTitleDiv{
-  text-align: center;
+text-align: center;
 font-feature-settings: 'clig' off, 'liga' off;
 font-family: Rubik;
 font-size: 36px;
@@ -641,12 +636,114 @@ line-height: 22.696px;
   padding-right: 110px;
 }
 
+/** LAYER UTILITIES */
 
 @layer utilities {
   body {
     scroll-behavior: smooth;
   }
 
+  
+.PopUpEnroll1{
+  padding-top: 590px;
+  /* padding-bottom: 36px; */
+  display: inline-flex;
+padding: 24px;
+justify-content: center;
+align-items: center;
+gap: 12px;
+border-radius: 40px;
+background: #FF8112;
+}
+
+
+.close2{
+  color: black;
+  background-color: black;
+  /* position: absolute; */
+  /* top: 10px;
+  right: 10px; */
+  font-size: 20px;
+  cursor: pointer;
+}
+  .PopUpCancel1{
+    display: inline-flex;
+  height: 66.137px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: var(--Neutral-Colors-White, #FFF);
+  }
+
+  
+.PopUpPara2{
+  color: #2C3131;
+  
+  width: 426px;
+  height: 350px;
+/* padding-left:1px; */
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px;
+padding-left: 36px;
+}
+  
+  PopUpCard1{
+    padding-right: 803px;
+    padding-top: 20px;
+    padding-left: 36px;
+    color: #2C3131;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; 
+  }
+
+.PopUpline{
+  width: 974px;
+height: 1px;
+background: #C3EFC3;
+}
+
+
+.PopUpTitleDiv1{
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 105.556% */
+  background: linear-gradient(96deg, #45BC41 3%, #B0BC41 65.04%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .titleColor{
+    background: linear-gradient(96deg, #45BC41 3%, #B0BC41 65.04%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+
+  .popup-content1{
+
+  background-color: #fff;
+  padding-bottom: 10px;
+  width: 957px;
+  height: 650px;
+  border-radius: 8px;
+  text-align: center;
+
+  }
   .bg-gradient {
     background: linear-gradient(105deg, #B2BC41 3.62%, #45BC41 103.47%);
   }

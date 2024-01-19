@@ -215,64 +215,43 @@ export const List = ({
     <>
       <div
         className="w-full max-w-fit  border-0  sm:max-w-[356px]  sm:items-center 
-    
-      rounded-3xl   overflow-hidden h-full md:h-[750px] shrink-0 listContainer2  "
+      rounded-3xl   overflow-hidden h-full md:h-[750px] shrink-0 listContainer2"
       >
-        <div className="flex-center flex-col gap-2.5   ">
+        <div className="flex-center flex-col gap-2.5">
           <div
-            className="h-auto w-full
-            
-               lg:h-[123.255px]
-           bg-gradient  
-            p-6 flex flex-col justify-center items-center md:items-start 
-              text-center 
-                "
+            className="h-auto w-full lg:h-[123.255px] bg-gradient  p-6 
+          flex flex-col justify-center items-center md:items-start text-center"
           >
-            {/* <div
-              className="h-auto w-full
-
-              lg:w-full lg:h-[123.255px]
-             flex-shrink-0 rounded-bl-0 rounded-br-0 rounded-tl-2 rounded-tr-2 bg-gradient 
-            p-6 flex flex-col justify-center items-center md:items-start pl-12 
-              text-center 
-                "
-            > */}
+            {/*title  */}
             <h1
-              className="text-white w-full font-rubik font-feature-settings font-bold leading-8
-               text-3xl justify-center  align-middle text-center md:text-center "
+              className="text-white w-full font-rubik font-feature-settings
+             font-bold leading-8 text-3xl justify-center  align-middle text-center
+              md:text-center"
             >
               {title}
             </h1>
-
+            {/* description only if foundation batches*/}
             {desc && (
               <div
-                className="pb-4 text-white 
-                text-sm w-full   font-bold text-center md:text-center "
+                className="pb-4 text-white text-sm w-full font-bold
+                 text-center md:text-center "
               >
                 {desc}
               </div>
             )}
           </div>
 
+          {/* Border line */}
           <div className="border-0 courseBorder  " />
-
-          <div
-            className="flex-between mt-4 px-4 pb-4
-            
-         
-            
-            h-[370px]
-            "
-          >
+          {/* Inside of card and extra text */}
+          <div className="flex-between mt-4 px-4 pb-4 h-[370px]">
             <div className="text-xl font-bold ">{text}</div>
-            <div
-              className="text-lg
-              text-[#2C3131] font-rubik font-normal leading-7 "
-              >
+
+            {/* Text Section */}
+            <div className="text-lg text-[#2C3131] font-rubik font-normal leading-7 ">
               <div className="flex flex-col font-[10px]">
                 <li>{links1}</li>
               </div>
-
               <div className="flex flex-col">
                 <li>{links2}</li>
               </div>
@@ -295,39 +274,21 @@ export const List = ({
           </div>
 
           {/* Buttons section */}
-          <div
-            className=" flex flex-col gap-4  mt-8 mx-4
-            sm:mx-0 sm:mt-0 
-            p-8" 
-          >
+          <div className=" flex flex-col gap-4  mt-8 mx-4 sm:mx-0 sm:mt-0 p-8">
             {/* Learn More button */}
             <div className="flexCenter  justify-center items-center gap-3">
               <PopupButton id={id} />
             </div>
-
-            <div
-              className="flexCenter  justify-center items-center gap-3
-            "
-            >
-              {/* Enroll now button */}
+            {/* Enroll now button */}
+            <div className="flexCenter  justify-center items-center gap-3">
               <Link href="https://wa.me/+918605954303">
                 <button
                   type="button"
                   title="Enroll Now"
-                  className=" inline-flex
-               px-6 py-6 justify-center
-               items-center
-               gap-1
-               border-1 rounded-full
-               bg-[#FF8112]
-               text-[#FFF]
-              text-center
-               font-feature-settings font-rubik
-               text-lg
-              sm:text-xl
-               font-normal
-                leading-6
-              "
+                  className=" inline-flex px-6 py-6 justify-center
+               items-center gap-1 border-1 rounded-full bg-[#FF8112]
+               text-[#FFF] text-center font-feature-settings font-rubik
+               text-lg sm:text-xl font-normal leading-6"
                 >
                   Enroll Now
                   <p>
