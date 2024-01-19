@@ -15,7 +15,7 @@ const About = () => {
         </h1>
         <p className="text-justify pl-8 pr-8 
          lg:pl-20 lg:pr-20 lg:text-center text-[#2C3131] font-rubik text-lg font-normal 
-        font-feature-settings" id="contact">
+        font-feature-settings" >
           SMAC's key objective is to provide complete guidance to the students
           preparing for the civil services examination conducted by the Union
           Public Service Commission(UPSC) as well as "Group 1 Services"

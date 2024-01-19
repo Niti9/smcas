@@ -24,7 +24,7 @@ export const Foot2 = () => {
         
           <Link
           style={{scrollBehavior:'smooth'}} 
-          className="flex  gap-4 md:flex-col  m-1 lg:flex-row " href="#Test" scroll>
+          className="flex  gap-4 md:flex-col  m-1 lg:flex-row " href="#PrelimsTest" scroll>
            {FOOTER_LINKS.link1}
           </Link>
 
@@ -46,7 +46,7 @@ export const Foot2 = () => {
           <li className="rounded-sm relative px-3 py-1 !hover:bg-black">
             
 
-            <Link className="pr-1 font-normal  flex-1" href="#Test">
+            <Link className="pr-1 font-normal  flex-1" href="#PrelimsTest">
               <ul
                 className="bg-white border  rounded-sm absolute top-0 right-0  
                     transition duration-150 ease-in-out origin-top-left min-w-32"

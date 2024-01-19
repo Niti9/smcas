@@ -261,28 +261,44 @@ export const List = ({
             
          
             
-            h-[360px]
+            h-[370px]
             "
           >
             <div className="text-xl font-bold ">{text}</div>
             <div
               className="text-lg
-              text-[#2C3131] font-rubik font-normal leading-7"
-            >
-              <div className="flex flex-col font-[10px]">{links1}</div>
-              <div className="flex flex-col">{links2}</div>
-              <div className="flex flex-col">{links3}</div>
-              <div className="flex flex-col">{links4}</div>
-              <div className="flex flex-col">{links5}</div>
-              <div className="flex flex-col">{links6}</div>
-              <div className="flex flex-col">{links7}</div>
+              text-[#2C3131] font-rubik font-normal leading-7 "
+              >
+              <div className="flex flex-col font-[10px]">
+                <li>{links1}</li>
+              </div>
+
+              <div className="flex flex-col">
+                <li>{links2}</li>
+              </div>
+              <div className="flex flex-col">
+                <li>{links3}</li>
+              </div>
+              <div className="flex flex-col">
+                <li>{links4}</li>
+              </div>
+              <div className="flex flex-col">
+                <li>{links5}</li>
+              </div>
+              <div className="flex flex-col">
+                <li>{links6}</li>
+              </div>
+              <div className="flex flex-col">
+                <li>{links7}</li>
+              </div>
             </div>
           </div>
 
+          {/* Buttons section */}
           <div
-            className=" flex flex-col gap-4 mt-8 mx-4
+            className=" flex flex-col gap-4  mt-8 mx-4
             sm:mx-0 sm:mt-0 
-            p-8"
+            p-8" 
           >
             {/* Learn More button */}
             <div className="flexCenter  justify-center items-center gap-3">
@@ -292,7 +308,6 @@ export const List = ({
             <div
               className="flexCenter  justify-center items-center gap-3
             "
-              id="Test"
             >
               {/* Enroll now button */}
               <Link href="https://wa.me/+918605954303">

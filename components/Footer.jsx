@@ -551,7 +551,7 @@ const Footer = () => {
 
         <div className="border  bg-white " />
         <p className="regular-14 w-full  mb-4 text-center text-gray-700">
-          © 2023 SMCAS. All rights reserved.
+          © 2024 SMCAS. All rights reserved.
         </p>
       </div>
     </footer>

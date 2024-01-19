@@ -6,10 +6,10 @@ import React from "react";
 const Test = () => {
   return (
     <>
-      <div className="pb-12" id="PrelimsTest">
-        <h1 className="font-bold text-[36px] text-center text-black
+      <div  id="PrelimsTest" className=" pt-8">
+        <h1 className="font-bold text-[30px] text-center md:text-[38px] text-black
          font-rubik font-feature-settings
-        bg-white flex-col">
+        bg-white flex-col px-4" >
           Prelims Test Series
         </h1>
       </div>

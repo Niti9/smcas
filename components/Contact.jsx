@@ -37,15 +37,16 @@ const Contact = ({}) => {
 
   return (
     
-    <>
+    <> 
      <ToastContainer 
      position="top-center"/>
       <div
         className="Container grid grid-cols-12 mx-auto py-10 md:pb-20 
     lg:place-items-center "
-      >
-        <div className="col-span-12 lg:col-span-6 p-4 md:p-0">
-          <div className="max-container  md:ml-[60px]  xl:ml-[100px] max-w-full ">
+    >
+        <div className="col-span-12 lg:col-span-6 p-4 md:p-0" >
+          <div className="max-container  md:ml-[60px]  xl:ml-[100px] max-w-full "
+       id="contact" >
             <Image src="/woman.png" alt="logo" width={629} height={629} />
           </div>
         </div>
@@ -54,17 +55,18 @@ const Contact = ({}) => {
           className="rounded-lg   col-span-12  mb-[70px] md:ml-[60px] md:mr-[60px]
           bg-white  lg:mt-[4rem] xl:mt-[4rem]
       md:block md:order-last  lg:col-span-6 lg:order-last"
-        >
+      >
           <div
             className="w-full  rounded-lg
         p-4  text-black bg-white gap-8"
-          >
+       >
             
             {/* {state.message && <h1>result is :{state.message}</h1>} */}
             <h2
               className=" flex-shrink-0
            text-[#2C3131] font-rubik font-bold  leading-[42.87px] 
            text-dark-hard  text-3xl "
+           
             >
               Contact Us
             </h2>

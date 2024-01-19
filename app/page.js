@@ -30,7 +30,7 @@ const page = () => {
           <CourseList />
         </div>
 
-        <Test />
+        <Test  />
         <About />
         <Strategy />
         <Contact />

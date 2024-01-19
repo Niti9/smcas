@@ -174,7 +174,7 @@ const Hero = () => {
         lg:pt-20
          xl:pl-52 xl:pr-52 xl:pt-[500px] xl:pb-[342px] ">
           <h1
-            className="  text-[16px] mt-4 pl-4 pr-4 leading-normal font-bold 
+            className="  text-[18px] mt-4   px-4 leading-normal font-bold 
            md:text-[36px] lg:text-[56px] md:font-bold lg:leading-[66px]
            xl:text-[60px]
             font-feature-settings 
@@ -183,7 +183,7 @@ const Hero = () => {
             UPSC/MPSC/Foundation Integrated Coaching centre
           </h1>
           <p
-            className="text-[8px]  p-4 sm:pl-8 sm:pr-8
+            className="text-[8px]  px-4  sm:pl-8 sm:pr-8
            md:pl-16 md:pr-16  md:text-[16px] 
              lg:text-[18px] xl:pl-0 xl:pr-0 xl:text-[20px]" 
           >
@@ -191,33 +191,9 @@ const Hero = () => {
             Institute of Business Management
           </p>
 
-          {/* <div className=" ">
-
-           
-              <Link href="https://wa.me/+918605954303">
-               <button
-                 className=" p-1 mt-2  sm:p-0 sm:mt-0 text-center sm:w-[56px] sm:h-[56px] md:w-[80px] md:h-[40px]
-                 md:m-5  rounded-full
-                  justify-center items-center
-                 md:rounded-3xl lg:w-[174px] lg:h-16 
-          bg-[#FF8112] lg:rounded-full lg:border lg:text-2xl
-         
-                 "
-                  type="button"
-                >
-                  <label
-                    className="  whitespace-nowrap
-                    
-          cursor-pointer"
-                  >
-                    Enroll Now
-                  </label>
-                </button>
-              </Link>
-          </div> */}
 
           <div
-            className="flexCenter  justify-center items-center  text-[6px] pt-[8px]
+            className="flexCenter  justify-center items-center  text-[8px] pt-1 md:pt-0
         
         md:text-[14px] md:p-2 md:font-normal 
         lg:text-[20px]  xl:text-[24px]
@@ -241,6 +217,8 @@ const Hero = () => {
               </button>
             </Link>
           </div>
+
+          
         </div>
       </div>
     </div>
