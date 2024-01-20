@@ -193,7 +193,7 @@ const Hero = () => {
 
 
           <div
-            className="flexCenter  justify-center items-center  text-[8px] pt-1 md:pt-0
+            className="flexCenter  justify-center items-center  text-[15px] pt-1 md:pt-0
         
         md:text-[14px] md:p-2 md:font-normal 
         lg:text-[20px]  xl:text-[24px]
@@ -205,7 +205,7 @@ const Hero = () => {
               <button
                 type="button"
                 title="Enroll Now"
-                className=" p-1 sm:p-4 lg:mt-10 lg:pl-6 lg:pr-6  
+                className=" py-2 px-4 sm:p-4 lg:mt-10 lg:pl-6 lg:pr-6  
                
                font-feature-settings font-rubik 
                bg-[#FF8112] text-white border rounded-full 

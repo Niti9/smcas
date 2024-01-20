@@ -48,7 +48,7 @@ const PopupButton3 = () => {
               * अभ्यासातील Overall Performance Improvement करणे.
             </div>
             <div className=" flex    ml-4">
-              *( Study Improvement Programme SIP)
+              *( Study Improvement Programme SIP).
             </div>
             <div className=" flex    ml-4">
               * Free Career Counselling sessions.
@@ -81,41 +81,42 @@ const PopupButton3 = () => {
         {/* Text  */}
         <div className="flex flex-col  w-full h-auto pb-4 ">
           <div className="text-[14px] text-justify text-nowrap   px-4 ">
-            <div >
-              * ६ वी ते १२ वी पर्यंतच्या पुस्तकांवर आधारित.
-            </div>
-            <div >
-              * UPSC/ MPSC च्या पूर्व परीक्षेचा संपूर्ण अभ्यासक्रम.
-            </div>
-            <div >
-              * मागील सर्व वर्षांच्या आयोगाच्या प्रश्नपत्रिका आणि दैनंदिन
-            </div>
-            <div >सराव परीक्षा.</div>
-            <div >
-              * यूपीएससीच्या मुलाखतीचा अनुभव असलेले दिल्लीचे तज्ञ
-            </div>
-            <div >मार्गदर्शक.</div>
-            <div >
-              * MPSC / UPSC ची तयारी करणाऱ्या सर्व विद्यार्थ्यांसाठी
-            </div>
-            <div >उपयुक्त.</div>
-            <div >
-              * English, मराठी व हिंदी माध्यमातून मार्गदर्शन.
-            </div>
+            <  li  >
+                 ६ वी ते १२ वी पर्यंतच्या पुस्तकांवर आधारित.
+                 
+            </  li>
+            <  li >
+                 UPSC/ MPSC च्या पूर्व परीक्षेचा संपूर्ण अभ्यासक्रम.
+            </  li>
+            <  li >
+                 मागील सर्व वर्षांच्या आयोगाच्या प्रश्नपत्रिका आणि दैनंदिन
+            </  li>
+            <  div className="pl-5">सराव परीक्षा.</div>
+            <  li >
+                 यूपीएससीच्या मुलाखतीचा अनुभव असलेले दिल्लीचे तज्ञ
+            </  li>
+            <  div className="pl-5" >मार्गदर्शक.</div>
+            <  li >
+                 MPSC / UPSC ची तयारी करणाऱ्या सर्व विद्यार्थ्यांसाठी
+            </  li>
+            <  div className="pl-5" >उपयुक्त.</div>
+            <  li >
+                 English, मराठी व हिंदी माध्यमातून मार्गदर्शन.
+            </  li>
          
          
-            <div >
-              * अभ्यासातील Overall Performance Improvement 
-            </div>
-            <div >
+            <  li >
+                 अभ्यासातील Overall Performance Improvement 
+            </  li>
+            <  div className="pl-5" >
             करणे.
             </div>
-            <div >
-              *( Study Improvement Programme SIP).
-            </div>
-            <div >
-              * Free Career Counselling sessions.
-            </div>
+            <  li >
+                ( Study Improvement Programme SIP).
+            </  li>
+            <  li >
+                 Free Career Counselling sessions.
+            </  li>
           </div>
         </div>
         </div>

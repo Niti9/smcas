@@ -28,7 +28,7 @@ const PopupButton1 = () => {
         </div>
           <div className="flex flex-row">
 
-          <div className="PopUpPara1 ml-4">
+          <div className="PopUpPara1 ml-4 ">
               <div className=" flex   ">
               * Targeted to crack the exam in the first attempt.
             </div>
@@ -60,14 +60,14 @@ const PopupButton1 = () => {
                * thought process and application of knowledge.
             </div>
           <div className="flex ml-4">
-          * Systematic approach to syllabus competition
+          * Systematic approach to syllabus competition.
             </div>
           <div className="flex ml-4">
           * Expert and Experienced
             faculty.
             </div>
           <div className="flex ml-4">
-          * Small size of batches (45 to 50 students) 
+          * Small size of batches (45 to 50 students).
             </div>
           <div className="flex ml-4">
           * Special focus on
@@ -75,9 +75,13 @@ const PopupButton1 = () => {
             </div>
           <div className="flex ml-4">
           * Regular current affairs-based answer writing
-            session.
+            
             </div>
-          <div className="flex ml-4">
+          <div className="flex ml-6">
+           session.
+            
+            </div>
+          <div className="flex ml-3">
           * Quality Enrichment session by selected candidate. 
             </div>
            
