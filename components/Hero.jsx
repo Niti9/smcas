@@ -193,7 +193,7 @@ const Hero = () => {
 
 
           <div
-            className="flexCenter  justify-center items-center  text-[14px] pt-1 md:pt-0
+            className="flexCenter  justify-center items-center  text-[12px] pt-1 md:pt-0
         
         md:text-[14px] md:p-2 md:font-normal 
         lg:text-[24px]  xl:text-[28px]
