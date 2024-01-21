@@ -5,45 +5,19 @@ import Footer from "@/components/Footer";
 // import  page  from "./page";
 
 export const metadata = {
-  // title: "SMCAS",
-  // description: "Website for SMCAS",
-  // other:{
-  //   'theme-color':'#0d1117',
-  //   'og:url':'smcas.in',
-  //   'og:image':'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
-  //   'twitter:image':'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
-  //   'twitter:card':'summary_large_image',
-  //   'og:type':'website',
-  //   'og:description':'SMCAS Provide complete guidance to the students preparing for the civil services examination. '
+  title: "SMCAS",
+  description: "SMCAS Provide complete guidance to the students preparing for the civil services examination.",
+  other:{
+    'theme-color':'#0d1117',
+    'og:url':'smcas.in',
+    'og:image':'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
+    'twitter:image':'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
+    'twitter:card':'summary_large_image',
+    'og:type':'website',
 
-  // }
+  }
 
-  openGraph: {
-    title: 'SMCAS',
-    description: 'SMCAS Provide complete guidance to the students preparing for the civil services examination.',
-    url: 'https://smcas.in',
-    siteName: 'smcas.in',
-    images: [
-      {
-        url: 'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
-        width: 800,
-        height: 600,
-      },
-      {
-        url: 'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
-        width: 320,
-        height: 600,
-      },
-      {
-        url: 'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
-        width: 1800,
-        height: 1600,
-        alt: 'Thunmbnail Image',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
+  
 };
 
 export default function RootLayout({ children }) {
