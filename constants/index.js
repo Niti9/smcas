@@ -99,9 +99,8 @@ export const FOOTER_LINKS = {
 
 export const SOCIAL = {
   title: "Social",
-  description:
-    "To be the Centre of Excellence to ensure our students are successful and that they achieve their aspirations within a timeframe",
+  description:"To be the Centre of Excellence to ensure our students are successful and that they achieve their aspirations within a timeframe.",
   // links: ["/facebook.svg", "/instagram.svg"],
-  link1:"/facebook.svg", 
-  link2:"/instagram.svg",
+  link1:"https://www.facebook.com/abhishek_patnigere/", 
+  link2:"https://www.instagram.com/abhishek_patnigere/",
 };

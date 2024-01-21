@@ -51,13 +51,13 @@ const PopupButton1 = () => {
                sessions.
             </div>
               <div className="flex ">
-              * Focus on developing the right approach, 
+              * Focus on developing the right approach.
             </div>
           </div>
 
           <div className="PopUpPara2 ml-4 ">
-          <div className="flex ml-4 ">
-               * thought process and application of knowledge.
+          <div className="flex ml-4">
+          *Thought process and application of knowledge.
             </div>
           <div className="flex ml-4">
           * Systematic approach to syllabus competition.
@@ -130,13 +130,13 @@ const PopupButton1 = () => {
            <li>Daily The Hindu Editorial Discussion.</li>
            <li>Regular Personal guidance and counselling.</li>
 
-           <li>Focus on developing the right approach,</li>
+           <li>Focus on developing the right approach, thought</li>
 
-           <li>thought process and application of knowledge.</li>
-           <li>Systematic approach to syllabus competition</li>
+           <p className="ml-5" > process and application of knowledge.</p>
+           <li>Systematic approach to syllabus competition.</li>
            <li> Expert and Experienced faculty.</li>
-           <li>Small size of batches (45 to 50 students)</li>
-           <li>Special focus on student doubt clearance</li>
+           <li>Small size of batches (45 to 50 students).</li>
+           <li>Special focus on student doubt clearance.</li>
            <li>Regular current affairs-based answer writing session.</li>
            <li>Quality Enrichment session by selected candidate.</li>
          </div>

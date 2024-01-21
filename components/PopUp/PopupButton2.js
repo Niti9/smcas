@@ -36,7 +36,7 @@ const PopupButton2 = () => {
                 * Delhi Pattern वरती आधारित.
               </div>
               <div className=" flex   ml-4 ">
-              * एम सी क्यू ची तयारी करून
+              * एम सी क्यू ची तयारी करून.
               </div>
               <div className=" flex    ml-4">
               (5000 Questions) घेण्यात येईल.
@@ -45,7 +45,7 @@ const PopupButton2 = () => {
               * प्रत्येक आठवड्यास weekly test programme.
               </div>
               <div className=" flex    ml-4">
-              * वयैक्तिक समपुदेशन व मार्गदर्शन .
+              * वयैक्तिक समपुदेशन व मार्गदर्शन.
               </div>
               <div className=" flex    ml-4">
               * अभ्यासक्रम शिकवताना Exam Oriented Systematic 
@@ -57,7 +57,7 @@ const PopupButton2 = () => {
               * उत्कृष्ट आणि अनभुवी शिक्षक.
               </div>
               <div className=" flex    ml-4">
-              * एका बॅच मध्ये फक्त 40 ते 45 विद्यार्थी .
+              * एका बॅच मध्ये फक्त 40 ते 45 विद्यार्थी.
               </div>
            
             
