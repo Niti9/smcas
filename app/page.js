@@ -34,6 +34,7 @@ const page = () => {
         <About />
         <Strategy />
         <Contact />
+
       </div>
     </>
   );
