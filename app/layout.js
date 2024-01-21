@@ -9,10 +9,9 @@ export const metadata = {
   description: "Website for SMCAS",
   other:{
     'theme-color':'#0d1117',
-    'color-scheme':'dark only',
     'og:url':'smcas.in',
-    'og:image':'https://ibb.co/BPtrvwD',
-    'twitter:image':'https://ibb.co/WcQcmVy',
+    'og:image':'https://i.ibb.co/pPxRNnD/Untitled-design-2.png',
+    'twitter:image':'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
     'twitter:card':'summary_large_image',
     'og:type':'website',
     'og:description':'SMCAS Provide complete guidance to the students preparing for the civil services examination. '
