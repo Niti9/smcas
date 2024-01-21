@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "SMCAS",
   description: "Website for SMCAS",
-  // other:{
-  //   'theme-color':'#0d1117',
+  other:{
+    'theme-color':'#0d1117',
   //   'og:url':'smcas.in',
   //   'og:image':'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
   //   'twitter:image':'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
@@ -16,24 +16,29 @@ export const metadata = {
   //   'og:type':'website',
   //   'og:description':'SMCAS Provide complete guidance to the students preparing for the civil services examination. '
 
-  // }
+  },
 
   openGraph: {
-    title: 'Next.js',
-    description: 'The React Framework for the Web',
-    url: 'https://nextjs.org',
-    siteName: 'Next.js',
+    title: 'SMCAS',
+    description: 'SMCAS Provide complete guidance to the students preparing for the civil services examination.',
+    url: 'https://smcas.in',
+    siteName: 'smcas.in',
     images: [
       {
-        url: 'https://nextjs.org/og.png',
+        url: 'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://nextjs.org/og-alt.png',
+        url: 'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
+        width: 320,
+        height: 600,
+      },
+      {
+        url: 'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
         width: 1800,
         height: 1600,
-        alt: 'My custom alt',
+        alt: 'Thunmbnail Image',
       },
     ],
     locale: 'en_US',
