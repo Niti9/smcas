@@ -5,10 +5,10 @@ import Footer from "@/components/Footer";
 // import  page  from "./page";
 
 export const metadata = {
-  title: "SMCAS",
-  description: "Website for SMCAS",
-  other:{
-    'theme-color':'#0d1117',
+  // title: "SMCAS",
+  // description: "Website for SMCAS",
+  // other:{
+  //   'theme-color':'#0d1117',
   //   'og:url':'smcas.in',
   //   'og:image':'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
   //   'twitter:image':'https://i.ibb.co/VvdvfwS/SMCAS-01-1-3.png',
@@ -16,7 +16,7 @@ export const metadata = {
   //   'og:type':'website',
   //   'og:description':'SMCAS Provide complete guidance to the students preparing for the civil services examination. '
 
-  },
+  // }
 
   openGraph: {
     title: 'SMCAS',
