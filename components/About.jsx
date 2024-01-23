@@ -9,8 +9,8 @@ const About = () => {
 
     // final code 
       <div className="pb-12  pt-[70px]">
-        <h1 className="text-[36px]  pl-8 md:text-center
-         font-bold font-rubik font-feature-settings  text-black bg-white flex-col">
+        <h1 className="text-4xl  pl-8 md:text-center
+         font-bold font-rubik font-feature-settings  text-[#2C3131] bg-white flex-col">
           About SMCAS
         </h1>
         <p className="text-justify pl-8 pr-8 

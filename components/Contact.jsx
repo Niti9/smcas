@@ -65,7 +65,7 @@ const Contact = ({}) => {
             <h2
               className=" flex-shrink-0
            text-[#2C3131] font-rubik font-bold  leading-[42.87px] 
-           text-dark-hard  text-3xl "
+           text-dark-hard  text-4xl "
            
             >
               Contact Us

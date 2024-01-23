@@ -428,6 +428,9 @@ import { GrLocation } from "react-icons/gr";
 import { Foot2 } from "./Foot2";
 import ArrowButton from "./ArrowButton";
 
+
+
+
 const Footer = () => {
   return (
     <footer className="flexCenter bg-slate-50   shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px]">
@@ -445,12 +448,14 @@ const Footer = () => {
             {/* Social media  description */}
             <ul className="regular-14 flex  pt-[1.5rem] pb-4  text-black _font-rubik7">
               {SOCIAL.description}
+              
             </ul>
 
             {/* Social Media icons */}
             <ul className="inline-flex gap-3">
+
               {/* facebook icon */}
-              <Link href="https://www.facebook.com/">
+              <Link href="https://www.facebook.com/profile.php?id=61556048272051">
                 <svg
                   width="35"
                   height="35"
