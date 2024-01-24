@@ -65,7 +65,7 @@ const PopupButton = ({ id }) => {
     <div className=" inline h-16  p-4  justify-center bg-white md:h-20 text-black  md:text-xl " onClick={handleClosePopup}>
          Cancel
        </div>
-       <Link href="https://wa.me/+917206246045">
+       <Link href="https://wa.me/+918605954303">
          <div className="inline-flex p-4 justify-center  md:p-6 md:text-xl  bg-[#FF8112] rounded-full text-white">Enroll Now</div>
        </Link>
       </Popup>
