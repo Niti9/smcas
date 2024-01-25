@@ -1,52 +1,45 @@
-
-    
 "use client";
-import React, { useEffect ,useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import {  useFormState } from "react-dom";
+import { useFormState } from "react-dom";
 import { handleFormSubmit } from "@/app/Actions/formAction";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = ({}) => {
-
   const formRef = useRef(null);
 
   const [state, formAction] = useFormState(handleFormSubmit, {
     message: null,
   });
 
-
-  useEffect(()=>{
-
-
-    if(state.message){
-
-      //to send user at top after submit the details 
+  useEffect(() => {
+    if (state.message) {
+      //to send user at top after submit the details
       window.scrollTo(0, 0);
 
       // to reset the data filled in email,name,desc
       formRef.current.reset();
-      
+
       //to send successfull message
-      toast.success("Your query has been submitted. Our team will reach out to you soon.");
+      toast.success(
+        "Your query has been submitted. Our team will reach out to you soon."
+      );
     }
-
-  },[state])
-
+  }, [state]);
 
   return (
-    
-    <> 
-     <ToastContainer 
-     position="top-center"/>
+    <>
+      <ToastContainer position="top-center" />
       <div
         className="Container grid grid-cols-12 mx-auto py-10 md:pb-20 
     lg:place-items-center "
-    >
-        <div className="col-span-12 lg:col-span-6 p-4 md:p-0" >
-          <div className="max-container  md:ml-[60px]  xl:ml-[100px] max-w-full "
-       id="contact" >
+      >
+        <div className="col-span-12 lg:col-span-6 p-4 md:p-0">
+          <div
+            className="max-container  md:ml-[60px]  xl:ml-[100px] max-w-full "
+            id="contact"
+          >
             <Image src="/woman.png" alt="logo" width={629} height={629} />
           </div>
         </div>
@@ -55,22 +48,22 @@ const Contact = ({}) => {
           className="rounded-lg   col-span-12  mb-[70px] md:ml-[60px] md:mr-[60px]
           bg-white  lg:mt-[4rem] xl:mt-[4rem]
       md:block md:order-last  lg:col-span-6 lg:order-last"
-      >
+        >
           <div
             className="w-full  rounded-lg
         p-4  text-black bg-white gap-8"
-       >
-            
+          >
             {/* {state.message && <h1>result is :{state.message}</h1>} */}
             <h2
               className=" flex-shrink-0
            text-[#2C3131] font-rubik font-bold  leading-[42.87px] 
            text-dark-hard  text-4xl "
-           
             >
               Contact Us
             </h2>
-            <p className="text-[#959ead] mb-4 xl:mb-8">We want to hear from you</p>
+            <p className="text-[#959ead] mb-4 xl:mb-8">
+              We want to hear from you
+            </p>
             <section className="container ">
               <div className="  ">
                 {/* formRef for create reference and then formAction is the argument 
@@ -78,7 +71,7 @@ const Contact = ({}) => {
                 <form ref={formRef} action={formAction}>
                   <div className="flex flex-col w-full pb-4 xl:pb-8">
                     <input
-                    required={true}
+                      required={true}
                       type="text"
                       id="name"
                       name="name"
@@ -90,8 +83,7 @@ const Contact = ({}) => {
                   </div>
                   <div className=" flex flex-col w-full pb-4 xl:pb-8">
                     <input
-                    required={true}
-
+                      required={true}
                       type="email"
                       id="email"
                       name="email"
@@ -103,7 +95,7 @@ const Contact = ({}) => {
                   </div>
                   <div className=" flex flex-col w-full lg:w-96 lg:h-20 xl:h-60 ">
                     <textarea
-                    required={true}
+                      required={true}
                       type="text"
                       id="description"
                       name="description"
@@ -117,7 +109,6 @@ const Contact = ({}) => {
                   <button
                     type="submit"
                     enabled="true"
-                    
                     className="submitButton bg-orange-50 text-white font-bold 
                  p-5 justify-center items-center content-center
                    rounded-5xl w-full

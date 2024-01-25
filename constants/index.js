@@ -2,58 +2,6 @@
 
 
 
-
-/* Courses*/
-// export const COURSES =[
-//   {
-//     title:"UPSC Integrated Batch",
-//     id:1,
-//     links:[
-//       "Targeted to crack the exam in the first attempt",
-//       "Delhi Pattern ",
-//       "-----------------------------------------------",
-//       "---------------------------------------------",
-//       "-----------------------------------------",
-//       "--------------------Exam Oriented Systematic Approach",
-//       "--------------------",
-//       "-------------------------------",
-//     ]
-//   },
-//   {
-//   title:"UPSC Integrated Batch",
-//   id:2,
-//     links:[
-//       "Targeted to crack the exam in the first attempt",
-//       "Delhi Pattern ",
-//       "-----------------------------------------------",
-//       "---------------------------------------------",
-//       "-----------------------------------------",
-//       "--------------------Exam Oriented Systematic Approach",
-//       "--------------------",
-//       "-------------------------------",
-//     ]
-//   },
-//   {
-//   title:"UPSC Integrated Batch",
-//   id:3,
-//     links:[
-//       "Targeted to crack the exam in the first attempt",
-//       "Delhi Pattern ",
-//       "-----------------------------------------------",
-//       "---------------------------------------------",
-//       "-----------------------------------------",
-//       "--------------------Exam Oriented Systematic Approach",
-//       "--------------------",
-//       "-------------------------------",
-//     ]
-//   },
-// ]
-
-
-
-
-
-
 //for navbar
 export const NAV_LINKS = [
     {href: '/', key: 'home', label: 'Home'},
@@ -76,13 +24,7 @@ export const FOOTER_CONTACT_INFO = {
   links: "contact@smcas.in",
   links2: "+91 8605954303",
     
-  
-  // links: [
-    
-  //   "contact@company.com",
-  //   "(123) 456 -789",
-    
-  // ],
+ 
   label1:"Indira Institute of Business Management,",
   label2:" Plot No.2, Sector 9, ",
   label3:"Sanpada, Navi Mumbai, Maharashtra 400705",
@@ -100,7 +42,6 @@ export const FOOTER_LINKS = {
 export const SOCIAL = {
   title: "Social",
   description:"To be the Centre of Excellence to ensure our students are successful and that they achieve their aspirations within a timeframe.",
-  // links: ["/facebook.svg", "/instagram.svg"],
   link1:"https://www.facebook.com/abhishek_patnigere/", 
   link2:"https://www.instagram.com/abhishek_patnigere/",
 };

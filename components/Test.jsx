@@ -1,6 +1,5 @@
 
 
-/** final code  */
 import React from "react";
 
 const Test = () => {

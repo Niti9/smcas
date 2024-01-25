@@ -1,25 +1,4 @@
 
-
-/* previous css for the previous code  */
-/* 
-.hidden{
-    display: none;
-}
-
-.scrollToTop{
-    @apply fixed bottom-8 right-8 cursor-pointer opacity-0
-    transition-opacity duration-300;
-
-    
-}
-.scrollToTop  img {
-    @apply w-8 h-8;
-} */
-
-
-
-/** */
-/* BackToTopButton.module.css */
 .scrollup {
     position: fixed;
     bottom: 64px;

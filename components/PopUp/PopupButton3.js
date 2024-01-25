@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../app/globals.css";
 
 const PopupButton3 = () => {
   return (
     <>
-    {/* desktop version */}
+      {/* desktop version */}
       <div className="hidden lg:block">
-        
         <div className=" container">
           <div className="PopUpTitleDiv">
             Foundation Batches
@@ -57,13 +56,13 @@ const PopupButton3 = () => {
         </div>
       </div>
 
-
       {/* mobile version */}
       <div className="lg:hidden block">
-        
         <div className=" w-full h-auto font-feature-settings font-rubik">
-          <div className="titleColor text-center text-[24px]  font-bold 
-      md:PopUpTitleDiv1">
+          <div
+            className="titleColor text-center text-[24px]  font-bold 
+      md:PopUpTitleDiv1"
+          >
             Foundation Batches
             <div className="pb-2 sm:pb-4  text-2xl sm:text-3xl font-medium pt-2 sm:pt-4 text-center md:text-center  ">
               [11th , 12th & Undergraduate Students]
@@ -72,58 +71,33 @@ const PopupButton3 = () => {
           <div className="PopUpLine border" />
         </div>
         <div
-         className="   pl-[1rem] !text-start text-[#2C3131]
+          className="   pl-[1rem] !text-start text-[#2C3131]
        text-[18px] font-semibold  font-rubik font-feature-settings  "
-       >
-         Features:{" "}
-       </div>
+        >
+          Features:{" "}
+        </div>
 
         {/* Text  */}
         <div className="flex flex-col  w-full h-auto pb-4 ">
           <div className="text-[14px] text-justify text-nowrap   px-4 ">
-            <  li  >
-                 ६ वी ते १२ वी पर्यंतच्या पुस्तकांवर आधारित.
-                 
-            </  li>
-            <  li >
-                 UPSC/ MPSC च्या पूर्व परीक्षेचा संपूर्ण अभ्यासक्रम.
-            </  li>
-            <  li >
-                 मागील सर्व वर्षांच्या आयोगाच्या प्रश्नपत्रिका आणि दैनंदिन
-            </  li>
-            <  div className="pl-5">सराव परीक्षा.</div>
-            <  li >
-                 यूपीएससीच्या मुलाखतीचा अनुभव असलेले दिल्लीचे तज्ञ
-            </  li>
-            <  div className="pl-5" >मार्गदर्शक.</div>
-            <  li >
-                 MPSC / UPSC ची तयारी करणाऱ्या सर्व विद्यार्थ्यांसाठी
-            </  li>
-            <  div className="pl-5" >उपयुक्त.</div>
-            <  li >
-                 English, मराठी व हिंदी माध्यमातून मार्गदर्शन.
-            </  li>
-         
-         
-            <  li >
-                 अभ्यासातील Overall Performance Improvement 
-            </  li>
-            <  div className="pl-5" >
-            करणे.
-            </div>
-            <  li >
-                ( Study Improvement Programme SIP).
-            </  li>
-            <  li >
-                 Free Career Counselling sessions.
-            </  li>
+            <li>६ वी ते १२ वी पर्यंतच्या पुस्तकांवर आधारित.</li>
+            <li>UPSC/ MPSC च्या पूर्व परीक्षेचा संपूर्ण अभ्यासक्रम.</li>
+            <li>मागील सर्व वर्षांच्या आयोगाच्या प्रश्नपत्रिका आणि दैनंदिन</li>
+            <div className="pl-5">सराव परीक्षा.</div>
+            <li>यूपीएससीच्या मुलाखतीचा अनुभव असलेले दिल्लीचे तज्ञ</li>
+            <div className="pl-5">मार्गदर्शक.</div>
+            <li>MPSC / UPSC ची तयारी करणाऱ्या सर्व विद्यार्थ्यांसाठी</li>
+            <div className="pl-5">उपयुक्त.</div>
+            <li>English, मराठी व हिंदी माध्यमातून मार्गदर्शन.</li>
+
+            <li>अभ्यासातील Overall Performance Improvement</li>
+            <div className="pl-5">करणे.</div>
+            <li>( Study Improvement Programme SIP).</li>
+            <li>Free Career Counselling sessions.</li>
           </div>
         </div>
-        </div>
-
-
+      </div>
     </>
-
   );
 };
 

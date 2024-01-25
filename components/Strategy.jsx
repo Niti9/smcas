@@ -17,30 +17,7 @@ const Strategy = () => (
  
 
       
-  //   <div className='flex flex-col gap-4 p-4  md:pl-56  lg:pl-0 lg:flex-row xl:flex-row lg:gap-0 xl:gap-0 xl:pl-32'>
-  //   {data.map((item, index) => (
-  //     <div key={index}  className='  sm:justify-center w-full lg:pl-4 xl:pl-0  lg:w-1/3 xl:w-[31.333%] lg:flex-row xl:flex-row'>
-  //       <div
-  //       className='   
-  //       sm:w-[320px] sm:h-[270px]   gap-y-4   xl:w-[400px]   xl:h-[240px]
-  //     font-rubik font-feature-settings border-2 border-[#45BC41]
-  //       '
-  //         style={{
-  //           // border: '1px solid #e0e0e0',
-  //           borderRadius: '16px',
-  //           padding: '16px',
-  //           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  //           paddingLeft:'26px',
-  //           paddingTop:'20px',
-  //         }}
-          
-  //       >
-  //         <h3 className='text-lg font-semibold '>{item.title}</h3>
-  //         <p className='text-md font-feature-settings'>{item.content}</p>
-  //       </div>
-  //     </div>
-  //   ))}
-  // </div>
+
 
 
     <div className='w-full flex flex-wrap  justify-evenly 
@@ -55,7 +32,6 @@ const Strategy = () => (
       w-auto h-auto border-2 border-[#45BC41]
       gap-y-4'
            style={{
-             // border: '1px solid #e0e0e0',
              borderRadius: '16px',
              padding: '16px',
              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',

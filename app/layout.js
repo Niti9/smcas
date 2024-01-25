@@ -2,7 +2,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// import  page  from "./page";
 
 export const metadata = {
   title: "SMCAS",

@@ -1,5 +1,4 @@
-import React from 'react';
-import "./Pop.css";
+import React from "react";
 
 const Popup = ({ isOpen, onClose, children }) => {
   if (!isOpen) {
@@ -14,8 +13,7 @@ const Popup = ({ isOpen, onClose, children }) => {
         </span>
         {children}
       </div>
-      </div>
-    
+    </div>
   );
 };
 
