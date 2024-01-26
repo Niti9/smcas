@@ -106,11 +106,11 @@ const Hero = () => {
             UPSC/MPSC/Foundation Integrated Coaching centre
           </h1>
           <p
-            className="text-[8px]  px-4  sm:pl-8 sm:pr-8
-           md:pl-16 md:pr-16  md:text-[16px] 
-             lg:text-[18px] xl:pl-0 xl:pr-0 xl:text-[20px]"
+            className="text-[8px]  px-2  sm:px-8
+           md:px-12  md:text-[16px] 
+             lg:text-[20px] xl:pl-0 xl:pr-0 xl:text-[28px]"
           >
-            UPSC Program inauguration on the 5th of January 2023 at Indira
+            UPSC Program inauguration at Indira
             Institute of Business Management
           </p>
 
@@ -127,7 +127,7 @@ const Hero = () => {
               <button
                 type="button"
                 title="Enroll Now"
-                className=" py-3 px-4 sm:p-4 lg:mt-4 lg:px-6 lg:py-6  
+                className=" py-2 px-3 sm:p-4 lg:mt-4 lg:px-6 lg:py-6  
                
                font-feature-settings font-rubik 
                bg-[#FF8112] text-white border rounded-full 

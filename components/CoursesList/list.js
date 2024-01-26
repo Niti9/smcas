@@ -75,9 +75,11 @@ export const List = ({
               <div className="flex flex-col">
                 <li>{links6}</li>
               </div>
+              { links7 && 
               <div className="flex flex-col">
                 <li>{links7}</li>
               </div>
+}
             </div>
           </div>
 

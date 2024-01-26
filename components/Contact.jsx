@@ -37,17 +37,20 @@ const Contact = ({}) => {
       >
         <div className="col-span-12 lg:col-span-6 p-4 md:p-0">
           <div
-            className="max-container  md:ml-[60px]  xl:ml-[100px] max-w-full "
+            className="max-container md:block md:px-16 md:text-center md:items-center md:content-center
+             xl:ml-[100px] max-w-full "
             id="contact"
           >
-            <Image src="/woman.png" alt="logo" width={629} height={629} />
+            <Image  src="/woman.png" alt="logo" width={629} height={629} />
           </div>
         </div>
 
         <div
-          className="rounded-lg   col-span-12  mb-[70px] md:ml-[60px] md:mr-[60px]
+          className="rounded-lg   col-span-12 
+           mb-[70px] md:mx-[64px] 
+          md:w-[629px] lg:w-auto
           bg-white  lg:mt-[4rem] xl:mt-[4rem]
-      md:block md:order-last  lg:col-span-6 lg:order-last"
+      md:order-last  lg:col-span-6 lg:order-last"
         >
           <div
             className="w-full  rounded-lg

@@ -47,7 +47,7 @@ const Footer = () => {
                 </svg>
               </Link>
               {/* Instagram Icon */}
-              <Link href="https://www.instagram.com/">
+              <Link href="https://www.instagram.com/smcas2024">
                 <svg
                   width="35"
                   height="35"
