@@ -6,7 +6,7 @@ import { handleFormSubmit } from "@/app/Actions/formAction";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Contact = ({}) => {
+const Contact = ({ }) => {
   const formRef = useRef(null);
 
   const [state, formAction] = useFormState(handleFormSubmit, {
@@ -41,7 +41,7 @@ const Contact = ({}) => {
              xl:ml-[100px] max-w-full "
             id="contact"
           >
-            <Image  src="/woman.png" alt="logo" width={629} height={629} />
+            <Image src="/woman.png" alt="logo" width={629} height={629} />
           </div>
         </div>
 
@@ -68,7 +68,7 @@ const Contact = ({}) => {
               We want to hear from you
             </p>
             <section className="container ">
-              <div className="  ">
+             
                 {/* formRef for create reference and then formAction is the argument 
                 of useFormState */}
                 <form ref={formRef} action={formAction}>
@@ -120,7 +120,7 @@ const Contact = ({}) => {
                     Send message
                   </button>
                 </form>
-              </div>
+            
             </section>
           </div>
         </div>

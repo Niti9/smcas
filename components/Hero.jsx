@@ -98,7 +98,7 @@ const Hero = () => {
         >
           <h1
             className="  text-[18px] mt-4   px-4 leading-normal font-bold 
-           md:text-[36px] lg:text-[56px] md:font-bold lg:leading-[66px]
+           sm:text-[36px] md:text-[36px] lg:text-[56px] md:font-bold lg:leading-[66px]
            xl:text-[60px]
             font-feature-settings 
         font-rubik  "
@@ -106,7 +106,7 @@ const Hero = () => {
             UPSC/MPSC/Foundation Integrated Coaching centre
           </h1>
           <p
-            className="text-[8px]  px-2  sm:px-8
+            className="text-[8px]  px-2  sm:px-4
            md:px-12  md:text-[16px] 
              lg:text-[20px] xl:pl-0 xl:pr-0 xl:text-[28px]"
           >
