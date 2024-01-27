@@ -12,7 +12,7 @@ import Strategy from "@/components/Strategy";
 const page = () => {
   return (
     <>
-      <main
+      {/* <main
         className="relative overflow-hidden  
       p-[1.5rem]
       md:pl-20 md:pr-20 md:pt-20 xl:pl-20
@@ -34,7 +34,41 @@ const page = () => {
         <About />
         <Strategy />
         <Contact />
+      </div> */}
+
+
+
+
+
+
+
+
+<main>
+    <div
+        className="relative overflow-hidden  
+      p-[1.5rem]
+      md:pl-20 md:pr-20 md:pt-20 xl:pl-20
+       "
+      >
+        <Hero />
+        <Courses />
       </div>
+
+      <div className="relative overflow-hidden ">
+        <div
+          className="
+         md:px-8 md:py-4 "
+        >
+          <CourseList />
+        </div>
+
+        <Test />
+        <About />
+        <Strategy />
+        <Contact />
+      </div>
+
+      </main>
     </>
   );
 };

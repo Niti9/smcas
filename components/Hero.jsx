@@ -85,6 +85,7 @@ const Hero = () => {
         className="w-full h-auto xl:pl-6 xl:w-[1350px] xl:h-[720px] "
         width={1350}
         height={720}
+        
       />
 
       <div

@@ -1,6 +1,7 @@
 
 
 import React from "react";
+import Image from 'next/image';
 
 const Test = () => {
   return (
@@ -17,10 +18,12 @@ const Test = () => {
      {/*Code for mobile as well as desktop
      sirf 1044px par galti ho rhi hai baaki scren par sahi se work kar rha hai*/}
      <div className=" w-full h-auto " >   
-     <img
+     <Image
         src="/comingSoon.png" // Update with your image path
         alt="Background"
         className="w-full h-auto "
+        height={811}
+        width={1519}
       />
         
         {/* For footer link */}
