@@ -100,9 +100,13 @@ export async function handleFormSubmit(prev, formdata) {
       <p>Best regards,<br> The Course Support Team</p>`,
     });
 
+  console.log("FORM DATA IS ", formdata);
+
     return {
       message: "Email sent successfully"
     };
+
+    
   }
   
 
@@ -118,6 +122,8 @@ export async function handleFormSubmit(prev, formdata) {
       error: error.message
     }
   }
+
+
 
  
 }
