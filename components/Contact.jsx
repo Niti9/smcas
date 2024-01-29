@@ -13,18 +13,20 @@ const Contact = ({ }) => {
     message: null,
   });
 
+  
   useEffect(() => {
-    if (state.message) {
-      //to send user at top after submit the details
+
+    // case1: when message of success only shows when status true means email send
+    if (state.status) {
       window.scrollTo(0, 0);
-
-      // to reset the data filled in email,name,desc
       formRef.current.reset();
-
-      //to send successfull message
-      toast.success(
-        "Your query has been submitted. Our team will reach out to you soon."
-      );
+      toast.success(state.message);
+    }
+    // case2: when message of error show when status false means email not send
+    else{
+      window.scrollTo(0, 0);
+      formRef.current.reset();
+      toast.error(state.message);
     }
   }, [state]);
 

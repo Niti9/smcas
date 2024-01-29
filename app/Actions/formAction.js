@@ -1,129 +1,138 @@
 "use server";
 import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-// export async function handleFormSubmit(prev,formdata)
-//  {
-//     "use server";
-
-//     // //API key of Ram an
-//     const resend = new Resend("re_9HjtvNQ8_4xyjeK32tFQPa5gCbfGdKvux");
-
-//     // resend.emails.send({
-//     //   from: 'nitin@phisharmor.pro',
-//     //   to: 'dbuucollege@gmail.com',
-//     //   subject: 'Hello World',
-//     //   html: `
-
-//     //   new email from
-//     //   ${formdata.get("name")}
-//     //   ${formdata.get("email")}
-//     //   ${formdata.get("description")}`
-//     // });
-
-//     // Creating a template with the email
-
-//     resend.emails.send({
-//       from: "nitin@phisharmor.pro",
-//       to: "dbuucollege@gmail.com",
-//       subject: "Course Related Query",
-//       html: `
-
-//   <h1>New Course Query</h1>
-//   <p>Hello SMCAS Admin ,</p>
-//   <p>You have received a new query regarding the courses. Here are the details:</p>
-
-//       <div class="question">
-//       <p class="user-info">User Name: ${formdata.get("name")}</p>
-//       <p class="user-info">User Email: ${formdata.get("email")}</p>
-//       <p><strong>Query:  ${formdata.get("description")}</strong></p>
-//       <p>What courses do you offer for UPSC, MPSC, and the foundation batch? I am interested in knowing more about the
-//         curriculum, fees, and admission process.</p>
-//     </div>
-
-//     <p>If you have any questions or need further information, please <a href="mailto:support@example.com">contact
-//         us</a>.</p>
-//     <p>Best regards,<br> The Course Support Team</p>
-
-//   new email from
-//   ${formdata.get("name")}
-//   ${formdata.get("email")}
-//   ${formdata.get("description")}`,
-//     });
-
-//     // console.log("FORM DATA IS ", formdata);
-//     // console.log("prev DATA IS ", prev);
-
-//     return {
-//       message:"email sent successfully"
-
-//     }
-//   };
+const useResend = false;
 
 export async function handleFormSubmit(prev, formdata) {
   "use server";
 
-  
-  // //API key of Ram an
-  // const resend = new Resend("re_9HjtvNQ8_4xyjeK32tFQPa5gCbfGdKvux");
-  const resend = new Resend("re_BamMn4An_EDNX9S8mFJWz5cZUGnpwdi5b");
 
-  // resend.emails.send({
-  //   from: 'nitin@phisharmor.pro',
-  //   to: 'dbuucollege@gmail.com',
-  //   subject: 'Hello World',
-  //   html: `
+  // case 1 when we used resend for that above we have to make it true but yet it is false
+  if (useResend) {
+    const resend = new Resend("re_BamMn4An_EDNX9S8mFJWz5cZUGnpwdi5b");
 
-  //   new email from
-  //   ${formdata.get("name")}
-  //   ${formdata.get("email")}
-  //   ${formdata.get("description")}`
-  // });
+    try {
+      resend.emails.send({
+        from: "contact@smcas.in",
+        to: "contact@smcas.in",
+        subject: "Course Related Query",
+        html: `<h1>New Course Query</h1>
+      <p>Hello SMCAS Admin ,</p>
+      <p>You have received a new query regarding the courses. Here are the details:</p>
+          
+          <div class="question">
+          <p class="user-info">User Name: ${formdata.get("name")}</p>
+          <p class="user-info">User Email: ${formdata.get("email")}</p>
+          <p><strong>Query:  ${formdata.get("description")}</strong></p>
+         ${prev}
+    
+        <p>Best regards,<br> The Course Support Team</p>`,
+      });
 
-  // Creating a template with the email
+      console.log("FORM DATA IS ", formdata);
 
-  try{
 
-    resend.emails.send({
-      from: "contact@smcas.in",
-      to: "contact@smcas.in",
-      subject: "Course Related Query",
-      html: `<h1>New Course Query</h1>
-    <p>Hello SMCAS Admin ,</p>
-    <p>You have received a new query regarding the courses. Here are the details:</p>
+      return {
+        message: "Email sent successfully",
+      };
+    } catch (error) {
+      console.log("FORM DATA IS ", formdata);
+      // console.log("prev DATA IS ", prev);
+
+      console.error("Error sending emails", error);
+
+      return {
+        message: "Failed to send email",
+        error: error.message,
+      };
+    }
+  }
+  // case 2 when we use smtp server with nodemailer yet it is true or working
+  else{
+    try {
+      
+      let data = {};
+      for(const[key,value] of formdata) {
+        data[key] = value;
+      }
+      const transporter = nodemailer.createTransport({
+        pool: true,
+        host: "smtp.resend.com",
+        port: 465,
+        secure: true,
+        auth: {
+          user: "resend",
+          pass: "re_BamMn4An_EDNX9S8mFJWz5cZUGnpwdi5b",
+        },
+      });
+      await transporter.verify();
+      const smtp = await Promise.resolve(transporter);
+      let mailConfig = {
+        from: `contact@smcas.in`,
+        html: `<h1 style={{ color: "#61dafb" }}>New Course Query</h1>
+        <p>Hello SMCAS Admin ,</p>
+        <p>You have received a new query regarding the courses. Here are the details:</p>
+            
+            <div class="question">
+            <p class="user-info">User Name: ${data.name}</p>
+            <p class="user-info">User Email: ${data.email}</p>
+            <p><strong>Query:  ${data.description}</strong></p
+          <p>Best regards,<br> The Course Support Team</p> 
         
-        <div class="question">
-        <p class="user-info">User Name: ${formdata.get("name")}</p>
-        <p class="user-info">User Email: ${formdata.get("email")}</p>
-        <p><strong>Query:  ${formdata.get("description")}</strong></p>
-       ${prev}
-  
-      <p>Best regards,<br> The Course Support Team</p>`,
-    });
+          `,
 
-  console.log("FORM DATA IS ", formdata);
 
-    return {
-      message: "Email sent successfully"
-    };
+      //   html:` <head>
+      //   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+      // </head>
+      // <div style="display:none;overflow:hidden;line-height:1px;opacity:0;max-height:0;max-width:0">The sales intelligence platform that helps you uncover qualified leads.<div> ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿
+      // </div>
+      // </div>
+    
+      // <body style="background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&quot;Helvetica Neue&quot;,sans-serif">
+      //   <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="max-width:37.5em;margin:0 auto;padding:20px 0 48px">
+      //     <tbody>
+      //       <tr style="width:100%">
+      //         <td><img alt="Koala" height="50" src="https://react-email-demo-7s5r0trkn-resend.vercel.app/static/koala-logo.png" style="display:block;outline:none;border:none;text-decoration:none;margin:0 auto" width="170" />
+      //           <p style="font-size:16px;line-height:26px;margin:16px 0">Hi <!-- -->Alan<!-- -->,</p>
+      //           <p style="font-size:16px;line-height:26px;margin:16px 0">Welcome to Koala, the sales intelligence platform that helps you uncover qualified leads and close deals faster.</p>
+      //           <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="text-align:center">
+      //             <tbody>
+      //               <tr>
+      //                 <td><a href="https://getkoala.com" style="background-color:#5F51E8;border-radius:3px;color:#fff;font-size:16px;text-decoration:none;text-align:center;display:inline-block;padding:12px 12px 12px 12px;line-height:100%;max-width:100%" target="_blank"><span><!--[if mso]><i style="letter-spacing: 12px;mso-font-width:-100%;mso-text-raise:18" hidden>&nbsp;</i><![endif]--></span><span style="max-width:100%;display:inline-block;line-height:120%;mso-padding-alt:0px;mso-text-raise:9px">Get started</span><span><!--[if mso]><i style="letter-spacing: 12px;mso-font-width:-100%" hidden>&nbsp;</i><![endif]--></span></a></td>
+      //               </tr>
+      //             </tbody>
+      //           </table>
+      //           <p style="font-size:16px;line-height:26px;margin:16px 0">Best,<br />The Koala team</p>
+      //           <hr style="width:100%;border:none;border-top:1px solid #eaeaea;border-color:#cccccc;margin:20px 0" />
+      //           <p style="font-size:12px;line-height:24px;margin:16px 0;color:#8898aa">470 Noor Ave STE B #1148, South San Francisco, CA 94080</p>
+      //         </td>
+      //       </tr>
+      //     </tbody>
+      //   </table>
+      // </body>`,
+
+
+        subject: `Query Form`,
+        to: "contact@smcas.in",
+      };
+      await smtp.sendMail(mailConfig);
+      console.log("email sent using smtp")
+      return {
+        status:true,
+        message: "Your query has been submitted. Our team will reach out to you soon.",
+      };
+    } catch (error) {
+      console.log("error in smtp is :",error.message)
+      
+      return {
+        status:false,
+        message: "Failed to send email",
+        error: error.message,
+      };
+    }
 
     
   }
-  
-
-  catch(error){
-
-    console.log("FORM DATA IS ", formdata);
-    // console.log("prev DATA IS ", prev);
-
-    console.error("Error sending emails",error);
-
-    return{
-      message:"Failed to send email", 
-      error: error.message
-    }
-  }
-
-
-
- 
 }
