@@ -7,9 +7,13 @@ const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hamburger, setHamburger] = useState(true);
 
+  const [enter,setEnter] = useState(true);
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
     setHamburger(!hamburger);
+  };
+  const clickOption =()=>{
+    setEnter(!enter);
   };
 
   return (
@@ -537,11 +541,58 @@ z-30 py-5
 
                 {/* Test series */}
                 <div className="group inline-block  text-white ">
+                  {enter ?
+                  (<>
                   <button
                     className="hover:bg-[#FF8112] text-primary
                    w-[300px] sm:w-[400px] sm:text-2xl outline-none 
                    focus:outline-none px-3 py-1 bg-black rounded-3xl
                     flex items-center "
+                  onClick={clickOption}
+                  >
+                    <Link
+                      href="#PrelimsTest"
+                      className="pr-1 font-semibold flex-1"
+                    >
+                      Test Series
+                    </Link>
+                    <span>
+                      <svg
+                        className="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-[600ms] ease-in-out"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                  
+                  <ul
+                  className="bg-black border transform scale-0
+                   group-hover:scale-100  transition duration-150 
+                ease-in-out origin-center  rounded-sm absolute
+                min-w-[300px]  sm:w-[400px] hover:bg-[#FF8112] hover:text-white 
+                z-50 text-lg sm:text-xl text-center "
+                >
+                  <Link
+                    className="pr-1 font-medium flex-1"
+                    href="#PrelimsTest"
+                    onClick={toggleMobileMenu}
+                  >
+                    <li className="px-3 py-1 ">Prelims Test Series</li>
+                  </Link>
+                </ul>
+                </>
+                )
+
+                  :(
+                    
+                  <button
+                    className="hover:bg-[#FF8112] text-primary
+                   w-[300px] sm:w-[400px] sm:text-2xl outline-none 
+                   focus:outline-none px-3 py-1 bg-black rounded-3xl
+                    flex items-center "
+                  onClick={clickOption}
                   >
                     <Link
                       href="#PrelimsTest"
@@ -560,29 +611,20 @@ z-30 py-5
                     </span>
                   </button>
 
-                  <ul
-                    className="bg-black border transform scale-0
-                     group-hover:scale-100  transition duration-150 
-                  ease-in-out origin-center  rounded-sm absolute
-                  min-w-[300px]  sm:w-[400px] hover:bg-[#FF8112] hover:text-white 
-                  z-50 text-lg sm:text-xl text-center "
-                  >
-                    <Link
-                      className="pr-1 font-medium flex-1"
-                      href="#PrelimsTest"
-                      onClick={toggleMobileMenu}
-                    >
-                      <li className="px-3 py-1 ">Prelims Test Series</li>
-                    </Link>
-                  </ul>
+                  
+                  )
+}
+                
                 </div>
 
                 {/* class Program */}
                 <div className="group inline-block  text-white ">
-                  <button
+                 {enter ?<>
+                 <button
                     className="hover:bg-[#FF8112] text-primary w-[300px]
                    sm:w-[400px] sm:text-2xl outline-none focus:outline-none px-3 py-1
                     bg-black rounded-3xl flex items-center min-w-32"
+                    onClick={clickOption}
                   >
                     <Link href="#courses" className="pr-1 font-semibold flex-1">
                       Class Program
@@ -597,7 +639,6 @@ z-30 py-5
                       </svg>
                     </span>
                   </button>
-
                   {/* list of class Programs */}
                   <ul
                     className="bg-black border transform scale-0
@@ -646,6 +687,29 @@ z-30 py-5
                       </li>
                     </Link>
                   </ul>
+                 </>:
+                 (
+                  <button
+                    className="hover:bg-[#FF8112] text-primary w-[300px]
+                   sm:w-[400px] sm:text-2xl outline-none focus:outline-none px-3 py-1
+                    bg-black rounded-3xl flex items-center min-w-32"
+                    onClick={clickOption}>
+                    <Link href="#courses" className="pr-1 font-semibold flex-1">
+                      Class Program
+                    </Link>
+                    <span>
+                      <svg
+                        className="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-[600ms] ease-in-out"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                 )
+                 } 
+
                 </div>
 
                 <div className="group inline-block text-white ">
