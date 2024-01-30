@@ -26,7 +26,6 @@ const PopupButton2 = () => {
               <div className=" flex    ml-4">
                 * Targeted to crack the exam in the first attempt.
               </div>
-              <div className=" flex    ml-4">* Delhi Pattern वरती आधारित.</div>
               <div className=" flex   ml-4 ">* एम सी क्यू ची तयारी करून.</div>
               <div className=" flex    ml-4">
                 (5000 Questions) घेण्यात येईल.
@@ -102,7 +101,6 @@ const PopupButton2 = () => {
           <div className="flex flex-col  w-full h-auto pb-4 ">
             <div className="text-[14px] text-justify text-nowrap   px-4">
               <li>Targeted to crack the exam in the first attempt.</li>
-              <li>Delhi Pattern वरती आधारित.</li>
               <li>एम सी क्यू ची तयारी करून (5000 Questions)</li>
               <div className="pl-5">घेण्यात येईल.</div>
               <li>प्रत्येक आठवड्यास weekly test programme.</li>

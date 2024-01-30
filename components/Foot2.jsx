@@ -7,7 +7,7 @@ export const Foot2 = () => {
     <>
       <ul
         className="flex flex-col gap32 mr-[6rem] lg:mr-32 text-black 
-        font-feature-settings font-rubik text-[16px]"
+        font-feature-settings font-rubik text-[16px] z-50"
       >
         <Link
           href="/"

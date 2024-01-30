@@ -23,7 +23,6 @@ const PopupButton1 = () => {
             <div className=" flex   ">
               * Targeted to crack the exam in the first attempt.
             </div>
-            <div className="flex">* Based on Delhi Pattern.</div>
             <div className="flex">* Weekly prelim and mains test.</div>
             <div className="flex">
               * Daily prelim and main answer writing session.
@@ -95,7 +94,6 @@ const PopupButton1 = () => {
           <div className="flex flex-col  w-full h-auto pb-4 ">
             <div className="text-[14px] text-justify text-nowrap   px-2 ">
               <li>Targeted to crack the exam in the first attempt.</li>
-              <li>Based on Delhi Pattern.</li>
               <li>Weekly prelim and mains test.</li>
               <li>Daily prelim and main answer writing session.</li>
               <li>Daily The Hindu Editorial Discussion.</li>
