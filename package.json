@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@vercel/speed-insights": "^1.0.9",
     "antd": "^5.12.7",
     "next": "14.0.4",
     "nodemailer": "^6.9.7",
