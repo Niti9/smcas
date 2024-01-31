@@ -9,13 +9,17 @@ export async function handleFormSubmit(prev, formdata) {
 
 
   // case 1 when we used resend for that above we have to make it true but yet it is false
+  //ismein thodi galti ye hai ki abhi kuch cheezein second way mein implement ki hai 
+  //means agar mail nahi send hoga phir bhi message show hoga wo chize niche manage kari hui hai 
   if (useResend) {
-    const resend = new Resend("re_BamMn4An_EDNX9S8mFJWz5cZUGnpwdi5b");
+    
+    const resend = new Resend(process.env.RESEND_API);
+   
 
     try {
       resend.emails.send({
-        from: "contact@smcas.in",
-        to: "contact@smcas.in",
+        from: process.env.fromEmail,
+        to: process.env.SendtoEmail,
         subject: "Course Related Query",
         html: `<h1>New Course Query</h1>
       <p>Hello SMCAS Admin ,</p>
@@ -63,13 +67,13 @@ export async function handleFormSubmit(prev, formdata) {
         secure: true,
         auth: {
           user: "resend",
-          pass: "re_BamMn4An_EDNX9S8mFJWz5cZUGnpwdi5b",
+          pass:process.env.RESEND_API,
         },
       });
       await transporter.verify();
       const smtp = await Promise.resolve(transporter);
       let mailConfig = {
-        from: `contact@smcas.in`,
+        from: process.env.fromEmail,
         html: `<h1 style={{ color: "#61dafb" }}>New Course Query</h1>
         <p>Hello SMCAS Admin ,</p>
         <p>You have received a new query regarding the courses. Here are the details:</p>
@@ -115,7 +119,7 @@ export async function handleFormSubmit(prev, formdata) {
 
 
         subject: `Query Form`,
-        to: "contact@smcas.in",
+        to: process.env.SendtoEmail,
       };
       await smtp.sendMail(mailConfig);
       console.log("email sent using smtp")
