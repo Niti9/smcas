@@ -130,11 +130,13 @@ export async function handleFormSubmit(prev, formdata) {
       };
     } catch (error) {
       console.log("error in smtp is :",error.message)
-      console.log(process.env.SendtoEmail)
-      console.log(typeof process.env.SendtoEmail);
-      console.log(process.env.fromEmail)
-      console.log(typeof process.env.fromEmail);
-      console.log(typeof fromEmail);
+
+      // by using this console we can see that typeof and value of env tokens
+      // console.log(process.env.SendtoEmail)
+      // console.log(typeof process.env.SendtoEmail);
+      // console.log(process.env.fromEmail)
+      // console.log(typeof process.env.fromEmail);
+      // console.log(typeof fromEmail);
 
       
       return {
