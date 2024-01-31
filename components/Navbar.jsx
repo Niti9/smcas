@@ -522,12 +522,12 @@ z-30 py-5
             >
               <ul className="items-center text-lg  gap-y-5 max-w-[600px]  lg:text-dark-soft flex flex-col lg:flex-row gap-x-2 font-medium ">
                 {/* Home */}
-                <div className="group inline-block text-white ">
+                <div className="group inline-block text-black ">
                   <button
                     className="hover:bg-primary w-[300px] sm:w-[400px]
                    text-primary sm:text-2xl outline-none focus:outline-none 
-                   px-3 py-1 bg-black rounded-3xl flex items-center
-                   hover:bg-[#FF8112] hover:text-whites "
+                   px-3 py-1 bg-white rounded-3xl flex items-center
+                   hover:bg-[#FF8112] hover:text-white "
                   >
                     <Link
                       href="/"
@@ -540,13 +540,13 @@ z-30 py-5
                 </div>
 
                 {/* Test series */}
-                <div className="group inline-block  text-white ">
+                <div className="group inline-block  text-black ">
                   {enter ?
                   (<>
                   <button
-                    className="hover:bg-[#FF8112] text-primary
+                    className="hover:bg-[#FF8112] hover:text-white
                    w-[300px] sm:w-[400px] sm:text-2xl outline-none 
-                   focus:outline-none px-3 py-1 bg-black rounded-3xl
+                   focus:outline-none px-3 py-1 bg-white rounded-3xl
                     flex items-center "
                   onClick={clickOption}
                   >
@@ -568,7 +568,7 @@ z-30 py-5
                   </button>
                   
                   <ul
-                  className="bg-black border transform scale-0
+                  className="bg-white border transform scale-0
                    group-hover:scale-100  transition duration-150 
                 ease-in-out origin-center  rounded-sm absolute
                 min-w-[300px]  sm:w-[400px] hover:bg-[#FF8112] hover:text-white 
@@ -588,9 +588,9 @@ z-30 py-5
                   :(
                     
                   <button
-                    className="hover:bg-[#FF8112] text-primary
+                    className="hover:bg-[#FF8112] hover:text-white
                    w-[300px] sm:w-[400px] sm:text-2xl outline-none 
-                   focus:outline-none px-3 py-1 bg-black rounded-3xl
+                   focus:outline-none px-3 py-1 bg-white rounded-3xl
                     flex items-center "
                   onClick={clickOption}
                   >
@@ -618,12 +618,12 @@ z-30 py-5
                 </div>
 
                 {/* class Program */}
-                <div className="group inline-block  text-white ">
+                <div className="group inline-block  text-black ">
                  {enter ?<>
                  <button
-                    className="hover:bg-[#FF8112] text-primary w-[300px]
+                    className="hover:bg-[#FF8112] hover:text-white w-[300px]
                    sm:w-[400px] sm:text-2xl outline-none focus:outline-none px-3 py-1
-                    bg-black rounded-3xl flex items-center min-w-32"
+                    bg-white rounded-3xl flex items-center min-w-32"
                     onClick={clickOption}
                   >
                     <Link href="#courses" className="pr-1 font-semibold flex-1">
@@ -641,7 +641,7 @@ z-30 py-5
                   </button>
                   {/* list of class Programs */}
                   <ul
-                    className="bg-black border transform scale-0
+                    className="bg-white  border transform scale-0
                      group-hover:scale-100  transition duration-150 
                   ease-in-out origin-center  rounded-sm absolute
                   min-w-[300px] sm:w-[400px] sm:text-xl text-center "
@@ -690,9 +690,9 @@ z-30 py-5
                  </>:
                  (
                   <button
-                    className="hover:bg-[#FF8112] text-primary w-[300px]
+                    className="hover:bg-[#FF8112] hover:text-white w-[300px]
                    sm:w-[400px] sm:text-2xl outline-none focus:outline-none px-3 py-1
-                    bg-black rounded-3xl flex items-center min-w-32"
+                    bg-white rounded-3xl flex items-center min-w-32"
                     onClick={clickOption}>
                     <Link href="#courses" className="pr-1 font-semibold flex-1">
                       Class Program
@@ -712,8 +712,12 @@ z-30 py-5
 
                 </div>
 
-                <div className="group inline-block text-white ">
-                  <button className="hover:bg-[#FF8112] hover:text-white  w-[300px] sm:w-[400px] sm:text-2xl outline-none focus:outline-none px-3 py-1 bg-black rounded-3xl flex items-center min-w-32">
+                <div className="group inline-block text-black ">
+                  <button className="hover:bg-[#FF8112] hover:text-white  
+                  w-[300px] sm:w-[400px] sm:text-2xl 
+                  outline-none focus:outline-none px-3
+                   py-1 bg-white rounded-3xl flex items-center 
+                   min-w-32">
                     <Link
                       href="#about"
                       className="pr-1 font-semibold flex-1"
@@ -724,11 +728,11 @@ z-30 py-5
                   </button>
                 </div>
 
-                <div className="group inline-block text-white ">
+                <div className="group inline-block text-black ">
                   <button
                     className="hover:bg-[#FF8112] hover:text-white w-[300px] 
                   sm:w-[400px]  sm:text-2xl outline-none focus:outline-none px-3 py-1
-                   bg-black rounded-3xl flex items-center min-w-32 "
+                   bg-white rounded-3xl flex items-center min-w-32 "
                   >
                     <Link
                       href="#contact"
@@ -745,11 +749,11 @@ z-30 py-5
                 <div className="group inline-block text-white  ">
                   <button
                     className=" w-[300px] sm:w-[400px] text-xl text-primary  sm:text-3xl bg-[#FF8112]
-                    outline-none focus:outline-none px-20 py-2  rounded-full flex items-center min-w-32"
+                    outline-none focus:outline-none px-20 py-1  rounded-full flex items-center min-w-32"
                   >
                     <Link
                       href="https://wa.me/+918605954303"
-                      className="pr-1 font-semibold flex-1 py-4 "
+                      className="pr-1 font-semibold flex-1 py-2 "
                     >
                       Enroll Now
                     </Link>
