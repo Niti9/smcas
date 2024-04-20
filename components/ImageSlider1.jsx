@@ -5,8 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 
+
 const ImageSlider1 = ({ slides, interval  }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+ const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
