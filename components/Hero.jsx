@@ -1,7 +1,7 @@
-import React from "react";
-import Button from "./Button";
-import Link from "next/link";
-import Image from "next/image";
+// import React from "react";
+// import Button from "./Button";
+// import Link from "next/link";
+// import Image from "next/image";
 
 //   return (
 //     <>
@@ -160,24 +160,25 @@ const Hero = () => {
 
   const slides = [
     {
-      image: '/student.png',
-      className: "w-full h-300 xl:px-6 xl:w-[1350px] xl:h-[720px]",
-      text: "UPSC/MPSC/Foundation Integrated Coaching centre",
-
-      id: 'slide1',
-    },
-    {
       image: '/smcasLandingPage.jpg',
       className: "w-full h-[420px] sm:w-[768px] sm:h-[500px] lg:w-[1500px] lg:h-[2100px] rounded-3xl",
 
 
       id: 'slide2',
+    },
+    {
+      image: '/student.png',
+      className: "w-full h-300 xl:px-6 xl:w-[1350px] xl:h-[720px]",
+      text: "UPSC/MPSC/Foundation Integrated Coaching centre",
+
+      id: 'slide1',
     }
+    
   ];
 
   return (
 <section>
-      <ImageSlider1 slides={slides} interval={3000} />
+      <ImageSlider1 slides={slides} interval={30000} />
 </section>
   );
 };
